@@ -6,7 +6,7 @@
     <title>CRYPTO MINING</title>
 </head>
 <style>
-    * {
+   * {
   box-sizing: border-box;
 }
 body {	margin:0;}
@@ -67,6 +67,77 @@ html {
 	padding:5px;
 	background-color:#f1f1f1;
 	}
+.cart-page{
+	margin: 80px auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.cart-info{
+	display: flex;
+	flex-wrap: wrap;
+}
+th{
+	text-align: left;
+	padding: 5px;
+	color: #fff;
+	background: #ff523b;
+	font-weight: normal;
+}
+
+td{
+	padding: 10px 5px; 
+}
+td input{
+	width: 40px;
+	height: 30px;
+	padding: 5px;
+	
+}
+td a{
+	color: #ff523b;
+	font-size: 12px;
+}
+td img{
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+.total-price{
+	display: flex;
+	justify-content: flex-end;
+}
+.total-price table{
+	border-top: 3px solid #ff523b;
+	width: 100%;
+	max-width: 400px;
+}
+td:last-child{
+	text-align: right;
+}
+th:last-child{
+	text-align: right;
+}
+@media only screen and (max-weight: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-2, .col-3, .col-4{
+		flex-basis: 100%;
+	}
+	.single-product .col-2{
+		padding: 20px 0;
+	}
+	.single-product h1{
+		font-size: 26px;
+		line-height 32px;
+	}
+	
+	.cart-info p{
+		display: none:
+	}
+}
 a {text-decoration:none;}
 </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -128,14 +199,14 @@ a {text-decoration:none;}
             for (const x in myObj) {
                 // text += "<div class='row'>";
                 // text += "<div class='col-9'>";
-                text += "<div class='col-md-3'>";
+                text += "<div class='col-md-4'>";
                 text += "<div class='card mt-3 shadow-lg p-3 mb-5 bg-body rounded'>";
                 text += "<img src='img/" + myObj[x].img_produk + "' style='width:100%; height:200px'>";
                 text += "<div class='card-body'>";
                 text += "<h2 class='card-title font-weight-bold mb-8 text-center'>" + myObj[x].nm_produk + "</h2>";
                 text += "<h5 class='card-text harga text-center fs-4'>" + myObj[x].harga_produk + "</h5><br>";
                 text += "<div class='d-grid gap-2 col-12 mx-auto'>";
-                text += "<button class='btn btn-primary rounded-pill shadow' type='button'>BUY</button>";
+                text += "<a href='keranjang.html' class='btn btn-primary rounded-pill shadow'>BUY</a>";
 				text += "<button class='btn btn-primary rounded-pill shadow' type='button'>ADD TO CART</button>";
                 text += "</div>";
                 text += "</div>";
