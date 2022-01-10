@@ -6,6 +6,39 @@
     <title>CRYPTO MINING</title>
 </head>
 <style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
    * {
   box-sizing: border-box;
 }
@@ -168,7 +201,7 @@ a {text-decoration:none;}
 				<li class="menu-kiri">
 					<a href="contact.html">Contact</a>
 					</li>
-            </ul>
+				</ul>
         </div>
 
         <div class="col-9">
@@ -177,58 +210,50 @@ a {text-decoration:none;}
                 <div class="col-5"><a href="buku.html">Guest Book</a></div>
                 <div class="col-3"><a href="login.html">Login</a></div>
             </div>
-            <div class="head1">
-                <div style="width:100%; color:white;
+	<div class="head1">
+		<div style="width:100%;
+		color:white;
 		            background-image:url('img/b.jpg');
 		            background-repeat:no-repeat;
 					background-size:100% auto; padding:20px;">
-                    <h1>CRYPTO MINING</h1>
-                    <h2>Mesin Cuan Online</h2>
-                    <a href="#">Belanja Sekarang</a>
-                </div>
-            </div>
-            <!-- <div class="head1" style="padding:10px;">
-                <div style="width:30%">
-                    <img src="img/q1.jpg"><br>NVIDIA GeForce RTX 3090 <br>Rp. 18.749.000<br>
-                    <a href="#">Pesan</a>
-                </div>
-            </div> -->
-            <p id="Mining"></p>
+            <h1>CRYPTO MINING</h1>
+			<h2>Mesin Cuan Online</h2>
+			<a href="awal.html">Belanja Sekarang</a>			
+		</div>	
+	</div>
+	<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Long Name</label>
+    <input type="text" id="lname" name="longname" placeholder="Your name...">
+
+    <label for="lname">Email Address</label>
+    <input type="text" id="eaddress" name="emailaddress" placeholder="name@example.com">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	  <option value="indonesia">Indonesia</option>
+	  <option value="jerman">Jerman</option>
+	  <option value="jepang">Jepang</option>
+	  <option value="korea">Korea</option>
+    </select>
+
+    <label for="subject">Pesan</label>
+    <textarea id="subject" name="subject" style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
         </div>
     </div>
+</div>
 
-    <script>
-        const xmlhttp = new XMLHttpRequest();
-        xmlhttp.onload = function() {
-            myObj = JSON.parse(this.responseText);
-            let text = "";
-            for (const x in myObj) {
-                // text += "<div class='row'>";
-                // text += "<div class='col-9'>";
-                text += "<div class='col-md-4'>";
-                text += "<div class='card mt-3 shadow-lg p-3 mb-5 bg-body rounded'>";
-                text += "<img src='img/" + myObj[x].img_produk + "' style='width:100%; height:200px'>";
-                text += "<div class='card-body'>";
-                text += "<h2 class='card-title font-weight-bold mb-8 text-center'>" + myObj[x].nm_produk + "</h2>";
-                text += "<h5 class='card-text harga text-center fs-4'>" + myObj[x].harga_produk + "</h5><br>";
-                text += "<div class='d-grid gap-2 col-12 mx-auto'>";
-                text += "<button class='btn btn-primary rounded-pill shadow'>BUY</button>";
-				text += "<a href='keranjang.html' class='btn btn-primary rounded-pill shadow' type='button'>ADD TO CART</a>";
-                text += "</div>";
-                text += "</div>";
-                text += "</div>";
-                text += "</div>";
-                // text += "</div>";
-                // text += "</div>";
-            }
-            document.getElementById("Mining").innerHTML = text;
-        };
-        xmlhttp.open("GET", "data.json");
-        xmlhttp.send();
-    </script>
-    <div class="footer">
+<div class="footer">
 			<p>Toko CRYPTO MINING by Devanda @2021.</p>
         </div>
 </body>
-
 </html>
+
+
