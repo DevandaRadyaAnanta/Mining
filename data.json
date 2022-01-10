@@ -1,0 +1,72 @@
+[
+	{
+		"img_produk" : "q1.jpg",
+		"nm_produk" : "GeForce RTX 3080 Ti",
+		"harga_produk" : "Rp. 18.749.000,-"
+	},
+	{
+		"img_produk" : "q2.jpg",
+		"nm_produk" : "GeForce RTX 3070 Ti",
+		"harga_produk" : "Rp. 17.385.500,-"
+	},
+	{
+		"img_produk" : "q3.jpg",
+		"nm_produk" : "AntMiner S19 Pro",
+		"harga_produk" : "Rp. 90.000.000,-"
+	},
+	{
+		"img_produk" : "q4.jpg",
+		"nm_produk" : "Antminer L3+ 504M/S",
+		"harga_produk" : "Rp. 39.730.000,-"
+	},
+	{
+		"img_produk" : "q5.jpg",
+		"nm_produk" : "VOLADOR PCI-E Riser",
+		"harga_produk" : "Rp. 652.500,-"
+	},
+	{
+		"img_produk" : "q6.jpg",
+		"nm_produk" : "FebSmart PCI-E Riser",
+		"harga_produk" : "Rp. 652.000,-"
+	},
+	{
+		"img_produk" : "q7.jpg",
+		"nm_produk" : "AMD Ryzen 3970X",
+		"harga_produk" : "Rp. 37.700.000,-"
+	},
+	{
+		"img_produk" : "q8.jpg",
+		"nm_produk" : "AMD Ryzen 3960X",
+		"harga_produk" : "Rp. 26.636.000,-"
+	},
+	{
+		"img_produk" : "q14.jpg",
+		"nm_produk" : "HyperFury 3200Mhz",
+		"harga_produk" : "Rp. 1.678.000,-"
+	},
+	{
+		"img_produk" : "q9.jpg",
+		"nm_produk" : "Sport 4GB 2400Mhz",
+		"harga_produk" : "Rp. 797.500,-"
+	},
+	{
+		"img_produk" : "q10.jpg",
+		"nm_produk" : "WD Blue SSD",
+		"harga_produk" : "Rp. 1.050.000,-"
+	},
+	{
+		"img_produk" : "q11.jpg",
+		"nm_produk" : "ADATA SU800 SSD",
+		"harga_produk" : "Rp. 855.500,-"
+	},
+	{
+		"img_produk" : "q12.jpg",
+		"nm_produk" : "Asus B250 Mining",
+		"harga_produk" : "Rp. 13.050.000,-"
+	},
+	{
+		"img_produk" : "q13.jfif",
+		"nm_produk" : "ASRock H110 Pro",
+		"harga_produk" : "Rp. 6.960.000,-"
+	}
+]
